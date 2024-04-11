@@ -5,7 +5,7 @@ import BestSellerView from "./components/BestSeller.vue";
 import ElectronicsView from "./components/Electronics.vue";
 import ClothingView from "./components/Clothing.vue";
 
-const routes = [
+const myRoutes = [
   {
     path: "/",
     name: "home",
@@ -40,7 +40,7 @@ const routes = [
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes,
+  routes:myRoutes,
 });
 
 export default router;

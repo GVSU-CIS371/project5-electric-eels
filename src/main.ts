@@ -9,7 +9,7 @@ import { aliases, mdi } from "vuetify/iconsets/mdi";
 import { fa } from "vuetify/iconsets/fa";
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
-import router from "./router";
+import router from "./router"; /// NOTE: THIS DOES NOT HAVE .ts FOR SOME REASON
 
 const vuetify = createVuetify({
   icons: {
