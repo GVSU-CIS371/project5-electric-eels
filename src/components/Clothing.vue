@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts" setup>
-  //import StoreItem from './StoreItem.vue';
+  import StoreItem from './StoreItem.vue';
   import { useProductStore } from '../stores/ProductStore';
 
   const store = useProductStore();
