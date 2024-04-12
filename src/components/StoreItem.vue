@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts" setup>
-  import { ProductDoc } from '../types/product.ts';
+  import { ProductDoc } from '../types/product';
   const props = defineProps<{prod: ProductDoc}>();
 
   const info = props.prod.data;
