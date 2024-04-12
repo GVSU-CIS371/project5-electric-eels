@@ -9,31 +9,26 @@ const myRoutes = [
   {
     path: "/",
     name: "home",
-    props: true,
     component: HomeView,
   },
   {
-    path: "/",
+    path: "/electronics",
     name: "electronics",
-    props: true,
     component: ElectronicsView,
   },
   {
-    path: "/",
+    path: "/clothing",
     name: "clothing",
-    props: true,
     component: ClothingView,
   },
   {
-    path: "/",
+    path: "/groceries",
     name: "groceries",
-    props: true,
     component: GroceriesView,
   },
   {
-    path: "/",
+    path: "/bestseller",
     name: "bestseller",
-    props: true,
     component: BestSellerView,
   },
 ];

@@ -2,10 +2,9 @@
   <v-container>
     <v-row> 
       <v-col>
-        <!--<template v-for="(item) in clothing" :key="item" :item = "item">
+        <template v-for="(item) in clothing" :key="item" :item = "item">
           <StoreItem :prod = "item"></StoreItem>
-        </template> -->
-        {{ clothing }}
+        </template>
       </v-col>
     </v-row>
   </v-container>
