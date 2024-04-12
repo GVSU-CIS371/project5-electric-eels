@@ -23,6 +23,10 @@
 
 <script lang="ts" setup>
 import { ref } from "vue";
+import { useProductStore } from './stores/ProductStore';
+
+const store = useProductStore();
+store.init();
 
 const links = ref([
   { text: "Home", to: "/", icon: "mdi-home" },

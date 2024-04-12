@@ -1,18 +1,10 @@
 <template>
-  <span>a</span>
   <v-container>
-    <span>b</span>
-    <v-row align="center"> 
-      <span>c</span>
+    <v-row> 
       <v-col>
-        <span>d</span>
-        <!--<template v-for="(item) in store.items" :key="item" :item = "item">
-          <span>this works</span>
+        <template v-for="(item) in store.items" :key="item" :item = "item">
           <StoreItem :prod = "item"></StoreItem>
-          <span>this works</span>
         </template>
-        -->
-        <span>e</span>
       </v-col>
     </v-row>
   </v-container>
@@ -23,6 +15,5 @@
   import { useProductStore } from '../stores/ProductStore';
 
   const store = useProductStore();
-  console.log(store.items);
 
 </script>
