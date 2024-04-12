@@ -2,13 +2,14 @@
   <v-card class="store-item">
     <v-img :src="image" height="200px"></v-img>
     <v-card-title>{{ name }}</v-card-title>
-    <v-card-subtitle>{{ rating }} {{ price }} {{ stock }}</v-card-subtitle>
+    <v-card-subtitle>{{ rating }} 
+      <v-icon>mdi-cash</v-icon> {{ price }} {{ stock }}
+    </v-card-subtitle>
     <v-card-text>{{ description }}</v-card-text>
   </v-card>
 </template>
 
 <script lang="ts" setup>
-  import { defineProps } from 'vue';
   import { ProductDoc } from '../types/product.ts';
   const props = defineProps<{prod: ProductDoc}>();
 
