@@ -1,5 +1,5 @@
 <template>
-  <v-card class="store-item">
+  <v-card class="store-item" hover>
     <v-img :src="image" height="200px"></v-img>
     <v-card-title>{{ name }}</v-card-title>
     <v-card-subtitle>
@@ -23,7 +23,7 @@
 
 <script lang="ts" setup>
   import { ProductDoc } from '../types/product';
-  import { ref, onMounted } from 'vue';
+  import { ref } from 'vue';
 
   const props = defineProps<{prod: ProductDoc}>();
 
@@ -34,9 +34,5 @@
   const price = info.price;
   const stock = info.stock;
   const description = info.description;
-
-  onMounted(() => {
-    console.log("Rating:", rating.value);
-  });
 
 </script>
